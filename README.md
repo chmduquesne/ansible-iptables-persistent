@@ -27,7 +27,7 @@ The idea of this role is to set iptables rules from the relevant role
 
     - hosts: servers
       roles:
-         - chmduquesne.ansible-iptables-persistent
+         - chmduquesne.iptables-persistent
       tasks:
           - name: "add some iptable rule"
           iptables:
