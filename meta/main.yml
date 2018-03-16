@@ -1,0 +1,14 @@
+galaxy_info:
+  author: Christophe-Marie Duquesne
+  description: Install iptables-persistent and listen to the handler "persist iptables"
+
+  license: BSD
+
+  min_ansible_version: 2.0
+
+  platforms:
+   - name: Debian
+
+  galaxy_tags: []
+
+dependencies: []

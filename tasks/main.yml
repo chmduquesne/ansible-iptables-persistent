@@ -1,0 +1,4 @@
+---
+- name: install iptables-persistent
+  package: name=iptables-persistent state=latest
+  when: ansible_os_family == "Debian"
