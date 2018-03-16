@@ -32,12 +32,12 @@ The idea of this role is to set iptables rules from the relevant role
          - chmduquesne.iptables-persistent
       tasks:
           - name: "add some iptable rule"
-          iptables:
+            iptables:
               chain: INPUT
               source: 8.8.8.8
               jump: DROP
-          become: yes
-          notify:
+            become: yes
+            notify:
               - persist iptables
 
 License
