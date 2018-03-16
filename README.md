@@ -29,16 +29,16 @@ The idea of this role is to set iptables rules from the relevant role
 
     - hosts: servers
       roles:
-         - chmduquesne.iptables-persistent
+        - chmduquesne.iptables-persistent
       tasks:
-          - name: "add some iptable rule"
-            iptables:
-              chain: INPUT
-              source: 8.8.8.8
-              jump: DROP
-            become: yes
-            notify:
-              - persist iptables
+        - name: "add some iptable rule"
+          iptables:
+            chain: INPUT
+            source: 8.8.8.8
+            jump: DROP
+          become: yes
+          notify:
+            - persist iptables
 
 License
 -------
