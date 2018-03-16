@@ -9,10 +9,10 @@ galaxy_info:
        - 7
        - 8
        - 9
-    - name: Ubuntu
-      versions:
-        - precise
-        - trusty
-        - xenial
+   - name: Ubuntu
+     versions:
+       - precise
+       - trusty
+       - xenial
   galaxy_tags: []
 dependencies: []
