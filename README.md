@@ -6,17 +6,12 @@ chmduquesne.ansible-iptables-persistent
 Requirements
 ------------
 
-Debian
-Ansible 2.2+
+Ansible 2.2+ on a Debian-based system
 
 Role Variables
 --------------
 
-No role variables.
-
-This role is meant to be used with the official iptables module. The idea
-is to use the handler "persist iptables" whenever adding any iptable rule
-from within a role.
+None
 
 Dependencies
 ------------
@@ -26,11 +21,22 @@ None
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
+The idea of this role is to set iptables rules from the relevant role
+(e.g. with ansible's native module), and to call the handler
+`persist iptables` when doing so. This will save ipv4 and ipv6 rules.
 
     - hosts: servers
       roles:
          - chmduquesne.ansible-iptables-persistent
+      tasks:
+          - name: "add some iptable rule"
+          iptables:
+              chain: INPUT
+              source: 8.8.8.8
+              jump: DROP
+          become: yes
+          notify:
+              - persist iptables
 
 License
 -------
