@@ -7,6 +7,7 @@ Requirements
 ------------
 
 Debian
+Ansible 2.2+
 
 Role Variables
 --------------
