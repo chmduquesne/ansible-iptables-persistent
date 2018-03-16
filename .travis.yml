@@ -62,3 +62,4 @@ script:
 
 notifications:
   email: true
+  webhooks: https://galaxy.ansible.com/api/v1/notifications/
