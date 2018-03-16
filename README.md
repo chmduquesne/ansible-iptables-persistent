@@ -1,7 +1,7 @@
 Role Name
 =========
 
-chmduquesne.ansible-iptables-persistent
+chmduquesne.iptables-persistent
 
 Requirements
 ------------
