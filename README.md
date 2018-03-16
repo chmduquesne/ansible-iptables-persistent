@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/chmduquesne/ansible-iptables-persistent.svg?branch=master)](https://travis-ci.org/chmduquesne/ansible-iptables-persistent) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-iptables--persistent-blue.svg)](https://galaxy.ansible.com/chmduquesne/iptables-persistent/)
+
 Role Name
 =========
 
