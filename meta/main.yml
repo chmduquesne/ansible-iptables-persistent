@@ -1,5 +1,5 @@
 galaxy_info:
-  role_name: iptables-persistent
+  role_name: iptables_persistent
   author: Christophe-Marie Duquesne
   description: Install iptables-persistent and listen to the handler "persist iptables"
   license: BSD
