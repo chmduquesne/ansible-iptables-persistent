@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.org/chmduquesne/ansible-iptables-persistent.svg?branch=master)](https://travis-ci.org/chmduquesne/ansible-iptables-persistent) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-iptables--persistent-blue.svg)](https://galaxy.ansible.com/chmduquesne/iptables-persistent/)
+[![Build Status](https://travis-ci.org/chmduquesne/ansible-iptables-persistent.svg?branch=master)](https://travis-ci.org/chmduquesne/ansible-iptables-persistent)
+[![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-chmduquesne.iptables_persistent-blue.svg)](https://galaxy.ansible.com/chmduquesne/iptables_persistent/)
 
 Role Name
 =========
@@ -29,7 +30,7 @@ The idea of this role is to set iptables rules from the relevant role
 
     - hosts: servers
       roles:
-        - chmduquesne.iptables-persistent
+        - chmduquesne.iptables_persistent
       tasks:
         - name: "add some iptable rule"
           iptables:
