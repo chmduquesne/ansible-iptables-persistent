@@ -4,7 +4,7 @@
 Role Name
 =========
 
-chmduquesne.iptables-persistent
+chmduquesne.iptables_persistent
 
 Requirements
 ------------
